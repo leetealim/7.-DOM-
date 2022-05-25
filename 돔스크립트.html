@@ -6,19 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM돔스크립트</title>
 
-    <script>
 
-        // *DOM
-        // =>Document Object model의 약자
-
-        
-        fgggf
-
-
-    </script>
 
 </head>
 <body>
     
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+
+
+    <script>
+
+        // *DOM
+        // => Document Object model의 약자
+        // => 반드시 BODY 최 하단에 스크립트를 작성해야 
+        // 원하는 선택자를 선택할 수 있음
+
+        // const boxE1 = document.querySelector('.box');
+        // => BODY 내부에 있는 클래스, 아이디, 태그, 자식, 자손, 구조선택자 등을 선택할 수 있음
+        // => 여러(같은 클래스명) 클래스일 경우 첫번째 태그만 선택함
+        // console.log(boxE1);
+
+
+        // const boxE1_2 = document.querySelector('.box:nth-child(2)');
+        // console.log(boxE1_2)
+
+        // const boxAll = document.querySelectorAll('.box');
+        // console.log(boxAll);
+
+
+        // const boxAll = document.querySelectorAll('.box');
+        // // => 여러 클래스를 선택해올수 있음
+        // // => 단, 선택할때 배열 형태로 반환 시켜줌
+        // // => 원하는 선택자를 선택하고싶을땐 배열 형식으로 선택해주면됨
+        // console.log(boxAll[2]);
+
+
+
+
+        
+        
+        
+
+
+    </script>
+
+
 </body>
 </html>
