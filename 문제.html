@@ -15,10 +15,41 @@
 
     <script>
 
+        // *방법1
+
         // *1번 문제
         // => 4개의 박스(선택자)한테 data-id값을 추가 하기
 
+        // const boxE1_1 = document.querySelector('.box:nth-child(1)');
+        // const boxE1_2 = document.querySelector('.box:nth-child(2)');
+        // const boxE1_3 = document.querySelector('.box:nth-child(3)');
+        // const boxE1_4 = document.querySelector('.box:nth-child(4)');
 
+        // boxE1_1. setAttribute('data-id',1);
+        // boxE1_2. setAttribute('data-id',2);
+        // boxE1_3. setAttribute('data-id',3);
+        // boxE1_4. setAttribute('data-id',4);
+
+
+
+        // *방법2
+
+        // const boxAll = document.querySelectorAll('.box');
+        // console.log(boxAll);
+        
+        // boxAll[0].setAttribute('data-id,0');
+        // boxAll[1].setAttribute('data-id,1');
+        // boxAll[2].setAttribute('data-id,2');
+        // boxAll[3].setAttribute('data-id,3');
+
+
+
+        // *방법3
+
+        const boxAll = document.querySelectorAll('.box');
+        for(let i = 0; i <= boxAll.length; i++){
+            boxAll[i].setAttribute('data-id',i);
+        }
 
 
 
